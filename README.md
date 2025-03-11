@@ -3,8 +3,8 @@ Heart of Bucharest is a web application made for the volunteering opportunities 
 
 Team Name: Jojos Hub
 
-Team Members: Ioana-Miruna Bădică
+Team Members: Ioana-Miruna Bădică, 1231EA, ioana.badica22@gmail.com
 
-Group: 1231EA
+
 
 
