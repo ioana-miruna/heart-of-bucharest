@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Heart of Bucharest</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Heart of Bucharest</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Opportunities</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <a href="/login" class="login-btn">Login</a>
+        <a href="/signup" class="signup-btn">Sign Up</a>
+    </div>
+</header>
+
+<main>
+    <section class="signup-container">
+        <h1>Login to Heart of Bucharest</h1>
+
+        <!-- Notification messages -->
+        <div th:if="${error}" class="error-message">
+            <p th:text="${error}"></p>
+        </div>
+        <div th:if="${message}" class="success-message">
+            <p th:text="${message}"></p>
+        </div>
+
+        <form th:action="@{/login}" method="post" th:object="${user}">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" th:field="*{email}" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" th:field="*{password}" required />
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="notice">
+            <p>Don't have an account? <a href="/signup">Sign up here</a>.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Heart of Bucharest. All rights reserved.</p>
+</footer>
+</body>
+</html>

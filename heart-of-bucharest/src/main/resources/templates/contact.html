@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Heart of Bucharest</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <div class="logo">Heart of Bucharest</div>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/opportunities">Opportunities</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <a href="/login" class="login-btn">Login</a>
+    <a href="/signup" class="signup-btn">Sign Up</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’re here to support your volunteering journey.</p>
+  </section>
+
+  <div class="signup-container">
+    <h1>Send Us a Message</h1>
+    <form method="post" action="#">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <input type="text" id="message" name="message" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Heart of Bucharest. All rights reserved.</p>
+</footer>
+</body>
+</html>

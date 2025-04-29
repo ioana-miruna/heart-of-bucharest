@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart of Bucharest</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <div class="logo">Heart of Bucharest</div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/opportunities">Opportunities</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <a href="/login" class="login-btn">Login</a>
+        <a href="/signup" class="signup-btn">Sign Up</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Make a Difference in Bucharest</h1>
+        <p>Join our community of volunteers and help those in need.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Find Opportunities</h2>
+            <p>Discover volunteering events that match your interests and schedule.</p>
+        </div>
+        <div class="feature">
+            <h2>Track Your Impact</h2>
+            <p>Keep a record of your volunteering hours and achievements.</p>
+        </div>
+        <div class="feature">
+            <h2>Connect with Others</h2>
+            <p>Meet like-minded individuals and grow your network.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Heart of Bucharest. All rights reserved.</p>
+</footer>
+</body>
+</html>
